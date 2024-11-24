@@ -10,7 +10,7 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.List;
 
-public class calisma_2 extends BaseDriver {
+public class US_102 extends BaseDriver {
 
     @Test
     public void Test2() throws AWTException {
@@ -20,12 +20,9 @@ public class calisma_2 extends BaseDriver {
 
         Robot rbt=new Robot();
 
-
-
-
         WebElement search= driver.findElement(By.xpath("//div[@class='elementor-widget-cmsmasters-search__popup-trigger-container']"));
         search.click();
-//div[@CLASS='elementor-widget-cmsmasters-search__form-container cmsmasters-submit-button-view-link']
+
         WebElement search_sendKeys= driver.findElement(By.xpath("//INPUT[@type='search']"));
         MyFunc.Bekle(5);
 
@@ -48,47 +45,9 @@ public class calisma_2 extends BaseDriver {
                 System.out.println("e.getText() = " + (sira++) + "." + e.getText());
 
 
-        }
-
-
-
-       /* Scanner okuStr=new Scanner(System.in);
-        System.out.print("Seçim = "); int secim= okuStr.nextInt(2);
-
-        switch (secim){
-            case 1 :
-                System.out.println("1."+ (e.getText().codePointAt(2)));break;
-            case 2 :
-                System.out.println("2."+ (e.getText().codePointAt(3)));break;
-            case 3 :
-                System.out.println("3."+ (e.getText().codePointAt(4)));break;
-            case 4 :
-                System.out.println("4."+ (e.getText().codePointAt(5)));break;
-            case 5 :
-                System.out.println("5."+ (e.getText().codePointAt(6)));break;
-            case 6 :
-                System.out.println("6."+ (e.getText().codePointAt(7)));break;
-
-
-
-
-            default :
-                System.out.println("Hatalı giriş"); // opsiyonlu , yazmayabilirsin
-        }
-*/
-
-      // WebElement webSelect=driver.findElement(By.xpath("//div[@class='cmsmasters-blog__posts']"));
-     //   Select javaSelect=new Select(webSelect);
-      //  javaSelect.selectByIndex(2);  // ister bu şekilde seçebilirsin   : indexle
-      //  MyFunc.Bekle(2);
+        }}}
 
 
 
 
 
-    }
-
-
-
-
-}
