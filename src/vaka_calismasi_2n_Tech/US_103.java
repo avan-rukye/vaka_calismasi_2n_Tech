@@ -11,7 +11,7 @@ import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 
-public class calisma_4 extends BaseDriver {
+public class US_103 extends BaseDriver {
 
     @Test
     public void Test3() throws AWTException {
